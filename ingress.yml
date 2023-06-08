@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "ekbana.xyz"
+  - host: "pawan.xyz"
     http:
       paths:
       - pathType: Prefix
