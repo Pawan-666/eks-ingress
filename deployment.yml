@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+    type: static
+
+spec:
+  template:
+    metadata:
+      name: myapp
+      labels:
+        app: myapp
+        type: static
+    spec:
+      containers:
+      - name: myapp
+        image: 666docker1234/staticsite:onnginx80 
+  replicas: 3
+  selector:
+    matchLabels:
+      type: static
